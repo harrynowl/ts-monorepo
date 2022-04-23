@@ -1,0 +1,44 @@
+{
+  "name": "sample-module",
+  "version": "1.0.0",
+  "description": "Sample typescript module",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/dts/index.d.ts",
+  "exports": {
+    "import": "./dist/esm/index.js",
+    "require": "./dist/cjs/index.js",
+    "types": "./dist/dts/index.d.ts"
+  },
+  "scripts": {
+    "build:esm": "tsc --project tsconfig.build.json --module es2020 --outDir ./dist/esm",
+    "build:cjs": "tsc --project tsconfig.build.json --module commonjs --outDir ./dist/cjs",
+    "build:dts": "tsc --project tsconfig.build.json --declaration --emitDeclarationOnly --outDir ./dist/dts",
+    "build": "yarn lint && yarn build:esm && yarn build:cjs && yarn build:dts",
+    "lint": "eslint src/**/*.ts",
+    "test": "jest --config jest.config.js --coverage --runInBand"
+  },
+  "devDependencies": {
+    "@tsconfig/node14": "~1.0.1",
+    "@types/jest": "~27.4.1",
+    "@types/node": "~17.0.25",
+    "@typescript-eslint/eslint-plugin": "~5.20.0",
+    "@typescript-eslint/parser": "~5.20.0",
+    "eslint": "~8.14.0",
+    "eslint-config-standard": "~17.0.0",
+    "eslint-plugin-import": "~2.26.0",
+    "eslint-plugin-n": "~15.1.0",
+    "eslint-plugin-promise": "~6.0.0",
+    "jest": "~27.5.1",
+    "jest-extended": "~2.0.0",
+    "ts-jest": "~27.1.4",
+    "typescript": "~4.6.3"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "yarn.build": {
+    "input": "src",
+    "output": "dist"
+  }
+}

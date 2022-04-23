@@ -1,0 +1,95 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "build [all]",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "yarn",
+      "args": [
+        "build"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+    },
+    {
+      "name": "build [shared/sample-module]",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/shared/sample-module",
+      "runtimeExecutable": "yarn",
+      "args": [
+        "run",
+        "build"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+    },
+    {
+      "name": "test [shared/sample-module]",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/shared/sample-module",
+      "runtimeExecutable": "yarn",
+      "args": [
+        "run",
+        "test"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+    },
+    {
+      "name": "build [server/sample-server]",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/server/sample-server",
+      "runtimeExecutable": "yarn",
+      "args": [
+        "run",
+        "build"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+    },
+    {
+      "name": "test [server/sample-server]",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/server/sample-server",
+      "runtimeExecutable": "yarn",
+      "args": [
+        "run",
+        "test"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+    },
+    {
+      "name": "watch [server/sample-server]",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/server/sample-server",
+      "runtimeExecutable": "yarn",
+      "args": [
+        "run",
+        "watch"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+    },
+    {
+      "name": "run [server/sample-server]",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/server/sample-server",
+      "runtimeExecutable": "yarn",
+      "args": [
+        "run",
+        "run"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+    },
+  ]
+}
