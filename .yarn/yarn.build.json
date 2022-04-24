@@ -2,14 +2,14 @@
   "comment": "This is an auto-generated file, it keeps track of whats been built. This is a local file, don't store this in version control.",
   "packages": {
     "shared/sample-module#build": {
-      "lastModified": 1650713657783.4238,
+      "lastModified": 1650794562269.5908,
       "status": "succeeded",
       "haveCheckedForRerun": true,
       "rerun": false,
       "command": "build"
     },
     "server/sample-server#build": {
-      "lastModified": 1650714461097.7578,
+      "lastModified": 1650715928601.9197,
       "status": "succeeded",
       "haveCheckedForRerun": true,
       "rerun": false,

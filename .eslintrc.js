@@ -2,7 +2,8 @@ module.exports = {
   env: {
     browser: true,
     es2019: true,
-    node: true
+    node: true,
+    jest: true
   },
   extends: [
     'standard'
